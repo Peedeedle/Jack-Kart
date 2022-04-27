@@ -430,7 +430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3954911290308509498}
   m_Layer: 2
-  m_Name: KartAgent
+  m_Name: MyKartAgent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

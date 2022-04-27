@@ -1,0 +1,23 @@
+{
+    "KartAgent": {
+        "checkpoints": [
+            {
+                "steps": 196856,
+                "file_path": "results\\Kart_01\\KartAgent\\KartAgent-196856.nn",
+                "reward": -1.2990001440048218,
+                "creation_time": 1651057711.3285322
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 196856,
+            "file_path": "results\\Kart_01\\KartAgent.nn",
+            "reward": -1.2990001440048218,
+            "creation_time": 1651057711.3285322
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.20.0",
+        "tensorflow_version": "2.7.1"
+    }
+}

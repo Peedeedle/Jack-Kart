@@ -32,7 +32,7 @@ public class KartController : MonoBehaviour
     [Header("Model Parts")]
     public Transform frontWheels;
     public Transform backWheels;
-    public Transform steeringWheel;
+    //public Transform steeringWheel;
 
     public void Awake() {
 
@@ -51,6 +51,7 @@ public class KartController : MonoBehaviour
 
     }
 
+    /*
     public void AnimateKart(float input) {
 
         // Kart model animation
@@ -62,16 +63,17 @@ public class KartController : MonoBehaviour
         backWheels.localEulerAngles += new Vector3(0, 0, sphere.velocity.magnitude / 2);
 
         // steering wheel animation
-        steeringWheel.localEulerAngles = new Vector3(-25, 90, ((input * 45)));
+        //steeringWheel.localEulerAngles = new Vector3(-25, 90, ((input * 45)));
 
     }
+    */
 
     public void Respawn() {
 
         // random position in the spawn managers spawn points
         Vector3 pos = _spawnPointManager.SelectRandomSpawnpoint();
         sphere.MovePosition(pos);
-        transform.position = pos - new Vector3(0, 0.4f, 0);
+        transform.position = pos -= new Vector3(0, 0, 0);
 
     }
 
@@ -84,7 +86,7 @@ public class KartController : MonoBehaviour
         sphere.AddForce(Vector3.down * gravity, ForceMode.Acceleration);
 
         //Follow Collider
-        transform.position = sphere.transform.position - new Vector3(0, 0.4f, 0);
+        transform.position = sphere.transform.position - new Vector3(0, 0.15f, 0);
 
         //Steering
         transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, new Vector3(0, transform.eulerAngles.y + currentRotate, 0), Time.deltaTime * 5f);

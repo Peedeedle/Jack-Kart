@@ -53,7 +53,7 @@ public class JackKartAgent : Agent {
         // apply acceleration, steer and animation actions
         _kartController.ApplyAcceleration(Actions[1]);
         _kartController.Steer(Actions[0]);
-        _kartController.AnimateKart(Actions[0]);
+        //_kartController.AnimateKart(Actions[0]);
 
     }
 

@@ -3,7 +3,7 @@
 // Author: Jack Peedle
 // Date Created: 14/04/22
 // Last Edited By: Jack Peedle
-// Date Last Edited: 14/04/22
+// Date Last Edited: 27/04/22
 // Brief:   
 //////////////////////////////////////////////////////////// 
 
@@ -11,17 +11,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Checkpoints : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class Checkpoints : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    // List of checkpoints
+    public List<Checkpoint> checkPoints;
+
+    private void Awake() {
+
+        // set the checkpoints to the children with the component of Checkpoint
+        checkPoints = new List<Checkpoint>(GetComponentsInChildren<Checkpoint>());
+
     }
 }

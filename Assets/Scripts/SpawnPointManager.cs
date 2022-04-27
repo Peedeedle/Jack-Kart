@@ -3,7 +3,7 @@
 // Author: Jack Peedle
 // Date Created: 14/04/22
 // Last Edited By: Jack Peedle
-// Date Last Edited: 14/04/22
+// Date Last Edited: 27/04/22
 // Brief:   
 //////////////////////////////////////////////////////////// 
 
@@ -13,15 +13,14 @@ using UnityEngine;
 
 public class SpawnPointManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public Transform[] spawnPoints;
+
+    public Vector3 SelectRandomSpawnpoint() {
+
+        // select random spawn point
+        int rnd = Random.Range(0, spawnPoints.Length);
+        return spawnPoints[rnd].position;
+
     }
 }

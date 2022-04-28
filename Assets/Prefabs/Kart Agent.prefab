@@ -267,6 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d21adb967f36daa499083c0a505f20f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KartPrefab: {fileID: 3137537921386370566}
   kartModel: {fileID: 5823694091970685785}
   kartNormal: {fileID: 3137537922403377517}
   sphere: {fileID: 3137537921078816491}
@@ -297,9 +298,9 @@ MonoBehaviour:
     VectorActionSize: 02000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
-  m_Model: {fileID: 5022602860645237092, guid: 913ef4925b612654e9d80e61ad981354, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: b095f034362d4fe4582066139409c182, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
+  m_BehaviorType: 2
   m_BehaviorName: KartAgent
   TeamId: 0
   m_UseChildSensors: 1

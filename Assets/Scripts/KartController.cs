@@ -16,6 +16,7 @@ public class KartController : MonoBehaviour
 {
     private SpawnPointManager _spawnPointManager;
 
+    public GameObject KartPrefab;
     public Transform kartModel;
     public Transform kartNormal;
     public Rigidbody sphere;
@@ -74,6 +75,7 @@ public class KartController : MonoBehaviour
         Vector3 pos = _spawnPointManager.SelectRandomSpawnpoint();
         sphere.MovePosition(pos);
         transform.position = pos - new Vector3(0, 0.4f, 0);
+        this.transform.rotation = Quaternion.Euler(0, 0, 0);
 
     }
 

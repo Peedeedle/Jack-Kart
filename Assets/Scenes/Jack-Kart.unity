@@ -1441,6 +1441,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7929880232717123966, guid: 8d1e2d471de01484b87d5d710f7dd828, type: 3}
+--- !u!1 &213422526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+  m_PrefabInstance: {fileID: 484004925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &239718193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,6 +2538,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1945176904}
     m_Modifications:
+    - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: KartPrefab
+      value: 
+      objectReference: {fileID: 213422526}
     - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RayLayerMask.m_Bits
       value: 4083
@@ -2593,6 +2602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kart Agent
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: b095f034362d4fe4582066139409c182, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1 &490151410 stripped
@@ -4597,6 +4610,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1945176904}
     m_Modifications:
+    - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: KartPrefab
+      value: 
+      objectReference: {fileID: 1230783262}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4645,6 +4662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kart Agent (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: b095f034362d4fe4582066139409c182, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1001 &795215442
@@ -5514,13 +5535,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.27059805, y: 0.6532815, z: -0.27059805, w: 0.6532815}
-  m_LocalPosition: {x: -0.104, y: 0.908, z: -1.128}
+  m_LocalRotation: {x: 0.3376634, y: 0.62127566, z: -0.3376634, w: 0.62127566}
+  m_LocalPosition: {x: -85.3, y: 4.2, z: -10.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 45, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 57.048, y: 90, z: 0}
 --- !u!1001 &967746805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5668,6 +5689,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1073290425499673401, guid: 30c35bafa11e9c948ab5b9408d3b7d3b, type: 3}
   m_PrefabInstance: {fileID: 968450100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &984733573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+  m_PrefabInstance: {fileID: 1435128909}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &988185028
 PrefabInstance:
@@ -7248,6 +7274,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1230783262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+  m_PrefabInstance: {fileID: 793341159}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1241162443
 GameObject:
   m_ObjectHideFlags: 0
@@ -9005,6 +9036,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1945176904}
     m_Modifications:
+    - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: KartPrefab
+      value: 
+      objectReference: {fileID: 984733573}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -9053,6 +9088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kart Agent (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: b095f034362d4fe4582066139409c182, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1 &1447647282
@@ -9607,6 +9646,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d94b82780da5e941b1cb6e94e6b8046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1512270439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+  m_PrefabInstance: {fileID: 1930278504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1533375319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13306,6 +13350,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1945176904}
     m_Modifications:
+    - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: KartPrefab
+      value: 
+      objectReference: {fileID: 1512270439}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -13354,6 +13402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kart Agent (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: b095f034362d4fe4582066139409c182, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1001 &1939833543

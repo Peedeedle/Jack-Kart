@@ -19,7 +19,7 @@ public class KartWallTrigger : MonoBehaviour {
 
         if (other.gameObject.tag == "Wall") {
 
-            Debug.Log("Collided With Wall");
+            //Debug.Log("Collided With Wall");
 
             jackKartAgent.CollidedWithWall();
 

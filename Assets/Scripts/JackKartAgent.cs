@@ -74,7 +74,7 @@ public class JackKartAgent : Agent {
 
         AddReward(-0.001f);
 
-        Debug.Log("Collided With Wall - Reward");
+        //Debug.Log("Collided With Wall - Reward");
 
     }
 

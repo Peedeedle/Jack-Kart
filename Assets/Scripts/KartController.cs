@@ -16,7 +16,7 @@ public class KartController : MonoBehaviour
 {
     private SpawnPointManager _spawnPointManager;
 
-    public GameObject KartPrefab;
+    //public GameObject KartPrefab;
     public Transform kartModel;
     public Transform kartNormal;
     public Rigidbody sphere;

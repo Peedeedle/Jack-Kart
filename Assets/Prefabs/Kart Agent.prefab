@@ -1,5 +1,80 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2401115531085172377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6394798362860493014}
+  - component: {fileID: 3756582731971807487}
+  - component: {fileID: 528063578417038033}
+  - component: {fileID: 5839796107091268785}
+  m_Layer: 2
+  m_Name: FrontWallDetection
+  m_TagString: KartWallDetection
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6394798362860493014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2401115531085172377}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.8829999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3137537921882263165}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3756582731971807487
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2401115531085172377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.8, z: 0.8}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &528063578417038033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2401115531085172377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbcebb6d93047041bedb9a628362a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jackKartAgent: {fileID: 846286714746702396}
+--- !u!54 &5839796107091268785
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2401115531085172377}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2522272461841878788
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +310,8 @@ Transform:
   m_Children:
   - {fileID: 2522272461841878789}
   - {fileID: 3137537922403377517}
+  - {fileID: 6394798362860493014}
+  - {fileID: 743048975425968210}
   m_Father: {fileID: 3137537921386370560}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -267,7 +344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d21adb967f36daa499083c0a505f20f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KartPrefab: {fileID: 3137537921386370566}
   kartModel: {fileID: 5823694091970685785}
   kartNormal: {fileID: 3137537922403377517}
   sphere: {fileID: 3137537921078816491}
@@ -298,9 +374,9 @@ MonoBehaviour:
     VectorActionSize: 02000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
-  m_Model: {fileID: 5022602860645237092, guid: b095f034362d4fe4582066139409c182, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: KartAgent
   TeamId: 0
   m_UseChildSensors: 1
@@ -380,6 +456,81 @@ Transform:
   m_Father: {fileID: 3137537921882263165}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8789956095741756558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 743048975425968210}
+  - component: {fileID: 3318092138898917763}
+  - component: {fileID: 1375283942227631693}
+  - component: {fileID: 3953315731706323711}
+  m_Layer: 2
+  m_Name: 'BackWallDetection '
+  m_TagString: KartWallDetection
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &743048975425968210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8789956095741756558}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.261}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3137537921882263165}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3318092138898917763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8789956095741756558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.8, z: 0.8}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1375283942227631693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8789956095741756558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbcebb6d93047041bedb9a628362a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jackKartAgent: {fileID: 846286714746702396}
+--- !u!54 &3953315731706323711
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8789956095741756558}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1001 &4249561477542134631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -437,23 +588,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d395d662eba5ad4ea9b4c947b91ee79, type: 3}
---- !u!4 &5823694091970685785 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7649525930043467838, guid: 4d395d662eba5ad4ea9b4c947b91ee79, type: 3}
-  m_PrefabInstance: {fileID: 4249561477542134631}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5823694092275476054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7649525929811354929, guid: 4d395d662eba5ad4ea9b4c947b91ee79, type: 3}
   m_PrefabInstance: {fileID: 4249561477542134631}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5823694090612649136 stripped
+--- !u!4 &5823694091970685785 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7649525928688054231, guid: 4d395d662eba5ad4ea9b4c947b91ee79, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7649525930043467838, guid: 4d395d662eba5ad4ea9b4c947b91ee79, type: 3}
   m_PrefabInstance: {fileID: 4249561477542134631}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &5823694091970685783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7649525930043467824, guid: 4d395d662eba5ad4ea9b4c947b91ee79, type: 3}
+  m_PrefabInstance: {fileID: 4249561477542134631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5823694090612649136 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7649525928688054231, guid: 4d395d662eba5ad4ea9b4c947b91ee79, type: 3}
   m_PrefabInstance: {fileID: 4249561477542134631}
   m_PrefabAsset: {fileID: 0}

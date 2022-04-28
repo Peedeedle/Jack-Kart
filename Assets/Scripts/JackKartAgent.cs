@@ -69,4 +69,13 @@ public class JackKartAgent : Agent {
         continousActions[1] = Input.GetKey(KeyCode.W) ? 1f : 0f;
 
     }
+
+    public void CollidedWithWall() {
+
+        AddReward(-0.001f);
+
+        Debug.Log("Collided With Wall - Reward");
+
+    }
+
 }

@@ -15,7 +15,7 @@ public class KartWallTrigger : MonoBehaviour {
 
     public JackKartAgent jackKartAgent;
 
-    public void OnTriggerEnter(Collider other) {
+    public void OnTriggerStay(Collider other) {
 
         if (other.gameObject.tag == "Wall") {
 

@@ -253,7 +253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3137537921386370560}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: Kart Agent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ MonoBehaviour:
     VectorActionSpaceType: 1
   m_Model: {fileID: 5022602860645237092, guid: 41a59d793cf8ef94da1f08fe5465e877, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
+  m_BehaviorType: 2
   m_BehaviorName: KartAgent
   TeamId: 0
   m_UseChildSensors: 1

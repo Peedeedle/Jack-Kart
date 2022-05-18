@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpaghettiCollider : MonoBehaviour
 {
-
+    /*
     public JackKartAgent agent;
 
     private void OnTriggerEnter(Collider other) {
@@ -18,5 +18,6 @@ public class SpaghettiCollider : MonoBehaviour
         }
 
     }
+    */
 
 }

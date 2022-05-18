@@ -13,6 +13,8 @@ using UnityEngine;
 
 public class KartISTrigger : MonoBehaviour {
 
+    /*
+
     public JackKartAgent jackKartAgent;
 
     public void OnTriggerEnter(Collider other) {
@@ -34,5 +36,9 @@ public class KartISTrigger : MonoBehaviour {
         }
 
     }
+
+    */
+
+
 
 }

@@ -9,6 +9,8 @@ TagManager:
   - KartWallDetection
   - CorrectISGO
   - WrongISGO
+  - WrongIS
+  - CorrectIS
   layers:
   - Default
   - TransparentFX
@@ -20,8 +22,8 @@ TagManager:
   - Wall
   - Checkpoint
   - Road
-  - 
-  - 
+  - WrongIS
+  - CorrectIS
   - 
   - 
   - 

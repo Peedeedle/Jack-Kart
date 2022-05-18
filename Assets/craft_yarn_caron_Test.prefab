@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 5298352364919861908}
   - component: {fileID: 6563100847918760499}
   - component: {fileID: 1750900757369463912}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: craft_yarn_caron_Test
-  m_TagString: WrongISGO
+  m_TagString: WrongIS
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,7 +121,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8134925323312345538}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.29468158, y: 0.12058893, z: 0.12045693}

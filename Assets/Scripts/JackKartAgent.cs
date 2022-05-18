@@ -19,10 +19,10 @@ public class JackKartAgent : Agent {
 
     // CheckpointManager, KartController
     public CheckpointManager _checkpointManager;
-    ///public CerealCPManager _cerealCPManager;
+    public NEWISCheckpointManager _NEWIScheckpointManager; 
     public KartController _kartController;
     ///public PerceptionIDManager _perceptionIDManager;
-    ///public RandomSpawner _randomSpawner;
+    public RandomSpawner _randomSpawner;
     ///public GameObject ISGotoGet;
     //public GameObject _ISgameObjectToFollow;
 
@@ -37,9 +37,9 @@ public class JackKartAgent : Agent {
 
         // Reset checkpoints, respawn Kart
         _checkpointManager.ResetCheckpoints();
-        ///_cerealCPManager.ResetCheckpoints();
+        _NEWIScheckpointManager.ResetCheckpoints();
         _kartController.Respawn();
-        ///_randomSpawner.SpawnRandomISGO();
+        _randomSpawner.SpawnRandomISGO();
     }
 
     public override void CollectObservations(VectorSensor sensor) {
@@ -47,6 +47,8 @@ public class JackKartAgent : Agent {
         // vector 3 for the next checkpoint to reach
         // add a negative reward constantly
         Vector3 diff = _checkpointManager.nextCheckPointToReach.transform.position - transform.position;
+
+        Vector3 NEWISdiff = _NEWIScheckpointManager.nextCheckPointToReach.transform.position - transform.position;
 
         //.transform.position - transform.position;
         // _perceptionIDManager.IDGameObjectLists.Add(gameObject.name = "thjis")
@@ -57,7 +59,7 @@ public class JackKartAgent : Agent {
         //
 
         sensor.AddObservation(diff / 20f);
-        ///sensor.AddObservation(ISdiff / 20f);
+        sensor.AddObservation(NEWISdiff / 20f);
         AddReward(-0.001f);
 
     }
@@ -95,6 +97,7 @@ public class JackKartAgent : Agent {
 
     }
 
+    /*
     public void CollidedWithCorrectISGO() {
 
         AddReward(1f);
@@ -121,5 +124,6 @@ public class JackKartAgent : Agent {
 
 
     }
+    */
 
 }

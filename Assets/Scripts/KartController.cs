@@ -14,7 +14,7 @@ using UnityEngine;
 
 public class KartController : MonoBehaviour
 {
-    private SpawnPointManager _spawnPointManager;
+    public SpawnPointManager _spawnPointManager;
 
     //public GameObject KartPrefab;
     public Transform kartModel;
@@ -75,6 +75,10 @@ public class KartController : MonoBehaviour
         Vector3 pos = _spawnPointManager.SelectRandomSpawnpoint();
         sphere.MovePosition(pos);
         transform.position = pos - new Vector3(0, 0.4f, 0);
+        ///Vector3 pos = new Vector3(0, 2f, 0);
+        ///sphere.MovePosition(pos);
+        ///this.gameObject.transform.position= pos - new Vector3(0, 2f, 0);
+
 
         // Set the rotation to 0
         this.transform.rotation = Quaternion.Euler(0, 0, 0);

@@ -7,6 +7,8 @@ TagManager:
   - Checkpoint
   - Wall
   - KartWallDetection
+  - CorrectISGO
+  - WrongISGO
   layers:
   - Default
   - TransparentFX
@@ -15,9 +17,9 @@ TagManager:
   - Water
   - UI
   - ImageSegmentation
-  - 
-  - 
-  - 
+  - Wall
+  - Checkpoint
+  - Road
   - 
   - 
   - 

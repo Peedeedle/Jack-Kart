@@ -13,12 +13,18 @@ using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
+using UnityEngine.Perception.GroundTruth;
 
 public class JackKartAgent : Agent {
 
     // CheckpointManager, KartController
     public CheckpointManager _checkpointManager;
-    private KartController _kartController;
+    ///public CerealCPManager _cerealCPManager;
+    public KartController _kartController;
+    ///public PerceptionIDManager _perceptionIDManager;
+    ///public RandomSpawner _randomSpawner;
+    ///public GameObject ISGotoGet;
+    //public GameObject _ISgameObjectToFollow;
 
     public override void Initialize() {
 
@@ -31,8 +37,9 @@ public class JackKartAgent : Agent {
 
         // Reset checkpoints, respawn Kart
         _checkpointManager.ResetCheckpoints();
+        ///_cerealCPManager.ResetCheckpoints();
         _kartController.Respawn();
-
+        ///_randomSpawner.SpawnRandomISGO();
     }
 
     public override void CollectObservations(VectorSensor sensor) {
@@ -40,7 +47,17 @@ public class JackKartAgent : Agent {
         // vector 3 for the next checkpoint to reach
         // add a negative reward constantly
         Vector3 diff = _checkpointManager.nextCheckPointToReach.transform.position - transform.position;
+
+        //.transform.position - transform.position;
+        // _perceptionIDManager.IDGameObjectLists.Add(gameObject.name = "thjis")
+
+        ///Vector3 ISdiff = ISGotoGet.transform.position - transform.position;
+        //
+        ///Vector3 ISdiff = _cerealCPManager.nextCerealCheckPointToReach.transform.position - transform.position;
+        //
+
         sensor.AddObservation(diff / 20f);
+        ///sensor.AddObservation(ISdiff / 20f);
         AddReward(-0.001f);
 
     }
@@ -75,6 +92,33 @@ public class JackKartAgent : Agent {
         AddReward(-0.001f);
 
         //Debug.Log("Collided With Wall - Reward");
+
+    }
+
+    public void CollidedWithCorrectISGO() {
+
+        AddReward(1f);
+
+        //_randomSpawner.DeleteInstantiatedPrefabs();
+
+        EndEpisode();
+        _kartController.Respawn();
+        //Debug.Log("Collided With Wall - Reward");
+
+
+    }
+
+    public void CollidedWithWrongISGO() {
+
+        AddReward(-1f);
+
+        //_randomSpawner.DeleteInstantiatedPrefabs();
+
+        EndEpisode();
+        _kartController.Respawn();
+        //Debug.Log("Collided With Wall - Reward");
+
+
 
     }
 

@@ -1,0 +1,3 @@
+model_checkpoint_path: "KartAgent-884129.ckpt"
+all_model_checkpoint_paths: "KartAgent-499670.ckpt"
+all_model_checkpoint_paths: "KartAgent-884129.ckpt"

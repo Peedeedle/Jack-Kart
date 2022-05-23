@@ -1,0 +1,35 @@
+{
+    "KartAgent": {
+        "checkpoints": [
+            {
+                "steps": 499128,
+                "file_path": "results\\FINAL_TRAINING_HANDIN_02\\KartAgent\\KartAgent-499128.nn",
+                "reward": -1.8946891948580742,
+                "creation_time": 1653297369.3029337
+            },
+            {
+                "steps": 999842,
+                "file_path": "results\\FINAL_TRAINING_HANDIN_02\\KartAgent\\KartAgent-999842.nn",
+                "reward": -2.2469270825386047,
+                "creation_time": 1653298160.0690722
+            },
+            {
+                "steps": 1490451,
+                "file_path": "results\\FINAL_TRAINING_HANDIN_02\\KartAgent\\KartAgent-1490451.nn",
+                "reward": -0.3047666847705841,
+                "creation_time": 1653298937.3567827
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1490451,
+            "file_path": "results\\FINAL_TRAINING_HANDIN_02\\KartAgent.nn",
+            "reward": -0.3047666847705841,
+            "creation_time": 1653298937.3567827
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.20.0",
+        "tensorflow_version": "2.7.1"
+    }
+}

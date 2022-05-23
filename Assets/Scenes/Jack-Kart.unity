@@ -605,6 +605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &8138678 stripped
@@ -1782,6 +1786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: drink_greentea_itoenTest
       objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
 --- !u!4 &56611270 stripped
@@ -1902,7 +1910,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3137537921078816488, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_PrefabInstance: {fileID: 1915383629}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &61886586
+--- !u!114 &61886582
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1911,7 +1919,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 61886581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1532889801af824c8a8820049b920b1, type: 3}
+  m_Script: {fileID: 11500000, guid: dc27267969b1a184a9d28a158bc41f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTimeToReachNextCheckpoint: 30
@@ -2008,6 +2016,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -2196,6 +2208,10 @@ PrefabInstance:
     - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
       propertyPath: m_Name
       value: craft_yarn_caron_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
@@ -4403,9 +4419,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2011942291}
     - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: _checkpointManager
+      value: 
+      objectReference: {fileID: 2132999133}
+    - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _NEWIScheckpointManager
       value: 
-      objectReference: {fileID: 2132999137}
+      objectReference: {fileID: 0}
     - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _spawnPointManager
       value: 
@@ -4415,8 +4435,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[1]
       value: CorrectIS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[2]
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
@@ -4470,21 +4506,33 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: ec2da065c0c29614086dda223e6bea9e, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 533529242ce86804d9c2e48356228980, type: 3}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_BehaviorType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
-      value: CorrectIS
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[1]
-      value: Wall
+      value: CorrectIS
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[2]
@@ -4498,7 +4546,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2434991854448928735, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1001 &205030923
 PrefabInstance:
@@ -4936,6 +4985,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -5478,6 +5531,10 @@ PrefabInstance:
     - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
       propertyPath: m_Name
       value: craft_yarn_caron_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
@@ -6973,6 +7030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &304084173 stripped
@@ -7184,6 +7245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &309915091 stripped
@@ -7356,7 +7421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330194550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 94.4}
+  m_LocalPosition: {x: 0, y: 0, z: 95.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 210727381}
@@ -7955,9 +8020,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 190733456}
     - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: _checkpointManager
+      value: 
+      objectReference: {fileID: 1180986373}
+    - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _NEWIScheckpointManager
       value: 
-      objectReference: {fileID: 1180986377}
+      objectReference: {fileID: 0}
     - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _spawnPointManager
       value: 
@@ -7967,8 +8036,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[1]
       value: CorrectIS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[2]
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
@@ -8022,21 +8107,33 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: ec2da065c0c29614086dda223e6bea9e, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 533529242ce86804d9c2e48356228980, type: 3}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_BehaviorType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
-      value: CorrectIS
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[1]
-      value: Wall
+      value: CorrectIS
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[2]
@@ -8050,7 +8147,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2434991854448928735, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1001 &380714338
 PrefabInstance:
@@ -8466,6 +8564,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -8632,6 +8738,14 @@ PrefabInstance:
     - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
@@ -9683,7 +9797,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3137537921078816488, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_PrefabInstance: {fileID: 960548339}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &465448223
+--- !u!114 &465448219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9692,7 +9806,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 465448218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1532889801af824c8a8820049b920b1, type: 3}
+  m_Script: {fileID: 11500000, guid: dc27267969b1a184a9d28a158bc41f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTimeToReachNextCheckpoint: 30
@@ -10008,6 +10122,14 @@ PrefabInstance:
     - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
@@ -11306,6 +11428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &512117815 stripped
@@ -12084,6 +12210,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -12594,6 +12728,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -12957,6 +13099,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13099,6 +13249,10 @@ PrefabInstance:
     - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
       propertyPath: m_Name
       value: craft_yarn_caron_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
@@ -13348,6 +13502,14 @@ PrefabInstance:
     - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
@@ -14140,6 +14302,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -14726,6 +14896,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -14855,6 +15033,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -17351,6 +17533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: drink_greentea_itoenTest
       objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
 --- !u!4 &747462702 stripped
@@ -17654,6 +17840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &762394639 stripped
@@ -17922,6 +18112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &770864332 stripped
@@ -18063,6 +18257,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -18399,6 +18597,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -20075,6 +20277,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -20519,7 +20729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868900508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 29.37}
+  m_LocalPosition: {x: 0, y: 0, z: 32.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2064796026}
@@ -20694,6 +20904,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -20861,7 +21079,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3137537921078816488, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_PrefabInstance: {fileID: 1876770611}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &894555099
+--- !u!114 &894555095
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20870,7 +21088,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 894555094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1532889801af824c8a8820049b920b1, type: 3}
+  m_Script: {fileID: 11500000, guid: dc27267969b1a184a9d28a158bc41f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTimeToReachNextCheckpoint: 30
@@ -21211,6 +21429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &900014437 stripped
@@ -21399,7 +21621,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907164617}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 123.9}
+  m_LocalPosition: {x: 0, y: 0, z: 124.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 69026139}
@@ -21465,6 +21687,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -22037,6 +22263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &940108316 stripped
@@ -22524,6 +22754,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -22635,6 +22873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: drink_greentea_itoenTest
       objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
 --- !u!4 &957811304 stripped
@@ -22697,9 +22939,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 873274974}
     - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: _checkpointManager
+      value: 
+      objectReference: {fileID: 465448219}
+    - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _NEWIScheckpointManager
       value: 
-      objectReference: {fileID: 465448223}
+      objectReference: {fileID: 0}
     - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _spawnPointManager
       value: 
@@ -22709,8 +22955,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[1]
       value: CorrectIS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[2]
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
@@ -22764,21 +23026,33 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: ec2da065c0c29614086dda223e6bea9e, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 533529242ce86804d9c2e48356228980, type: 3}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_BehaviorType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
-      value: CorrectIS
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[1]
-      value: Wall
+      value: CorrectIS
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[2]
@@ -22792,7 +23066,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2434991854448928735, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1001 &962948279
 PrefabInstance:
@@ -25511,6 +25786,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -26032,6 +26315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &1092590475 stripped
@@ -26247,7 +26534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106703016}
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -31.1, y: 0, z: 148.17}
+  m_LocalPosition: {x: -42.1, y: 0, z: 148.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1990848136}
@@ -26345,6 +26632,10 @@ PrefabInstance:
     - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
       propertyPath: m_Name
       value: craft_yarn_caron_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
@@ -26444,9 +26735,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1312138027}
     - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: _checkpointManager
+      value: 
+      objectReference: {fileID: 1161971616}
+    - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _NEWIScheckpointManager
       value: 
-      objectReference: {fileID: 1161971620}
+      objectReference: {fileID: 0}
     - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _spawnPointManager
       value: 
@@ -26456,8 +26751,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[1]
       value: CorrectIS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[2]
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
@@ -26511,21 +26822,33 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: ec2da065c0c29614086dda223e6bea9e, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 533529242ce86804d9c2e48356228980, type: 3}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_BehaviorType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
-      value: CorrectIS
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[1]
-      value: Wall
+      value: CorrectIS
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[2]
@@ -26539,7 +26862,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2434991854448928735, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1001 &1118791322
 PrefabInstance:
@@ -26551,6 +26875,14 @@ PrefabInstance:
     - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
@@ -27345,7 +27677,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3137537921078816488, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_PrefabInstance: {fileID: 1113117806}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1161971620
+--- !u!114 &1161971616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27354,7 +27686,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1161971615}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1532889801af824c8a8820049b920b1, type: 3}
+  m_Script: {fileID: 11500000, guid: dc27267969b1a184a9d28a158bc41f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTimeToReachNextCheckpoint: 30
@@ -27740,6 +28072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &1170954135 stripped
@@ -27807,6 +28143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &1175815362 stripped
@@ -27829,6 +28169,14 @@ PrefabInstance:
     - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
@@ -27902,7 +28250,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3137537921078816488, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_PrefabInstance: {fileID: 378739389}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1180986377
+--- !u!114 &1180986373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27911,7 +28259,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1180986372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1532889801af824c8a8820049b920b1, type: 3}
+  m_Script: {fileID: 11500000, guid: dc27267969b1a184a9d28a158bc41f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTimeToReachNextCheckpoint: 30
@@ -28206,6 +28554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: drink_greentea_itoenTest
       objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
 --- !u!4 &1196862576 stripped
@@ -28435,6 +28787,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 318505717570442006, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _randomSpawner
       value: 
@@ -28444,9 +28800,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 221262021}
     - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: _checkpointManager
+      value: 
+      objectReference: {fileID: 2033274528}
+    - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _NEWIScheckpointManager
       value: 
-      objectReference: {fileID: 2033274532}
+      objectReference: {fileID: 0}
     - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _spawnPointManager
       value: 
@@ -28456,8 +28816,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[1]
       value: CorrectIS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[2]
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
@@ -28514,10 +28890,14 @@ PrefabInstance:
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: ec2da065c0c29614086dda223e6bea9e, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 533529242ce86804d9c2e48356228980, type: 3}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_BehaviorType
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.size
@@ -28525,11 +28905,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
-      value: CorrectIS
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[1]
-      value: Wall
+      value: CorrectIS
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[2]
@@ -28547,7 +28927,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2434991854448928735, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1001 &1206111933
 PrefabInstance:
@@ -28963,6 +29344,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -30269,6 +30654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &1254787951 stripped
@@ -31006,6 +31395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &1296906485 stripped
@@ -31072,6 +31465,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -31420,9 +31817,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 59132464}
     - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: _checkpointManager
+      value: 
+      objectReference: {fileID: 1999089413}
+    - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _NEWIScheckpointManager
       value: 
-      objectReference: {fileID: 1999089417}
+      objectReference: {fileID: 0}
     - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _spawnPointManager
       value: 
@@ -31432,8 +31833,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[1]
       value: CorrectIS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[2]
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
@@ -31487,21 +31904,33 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: ec2da065c0c29614086dda223e6bea9e, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 533529242ce86804d9c2e48356228980, type: 3}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_BehaviorType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
-      value: CorrectIS
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[1]
-      value: Wall
+      value: CorrectIS
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[2]
@@ -31515,7 +31944,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2434991854448928735, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1 &1316996453
 GameObject:
@@ -31887,6 +32317,10 @@ PrefabInstance:
     - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
       propertyPath: m_Name
       value: craft_yarn_caron_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
@@ -32686,6 +33120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: drink_greentea_itoenTest
       objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
 --- !u!4 &1349511204 stripped
@@ -32841,6 +33279,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -34522,6 +34964,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -36530,6 +36976,14 @@ PrefabInstance:
     - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
@@ -39455,122 +39909,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b600332c9abeb0b46b24eb3a8e386790, type: 3}
   m_PrefabInstance: {fileID: 1618304793}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1620343980
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1620343984}
-  - component: {fileID: 1620343983}
-  - component: {fileID: 1620343982}
-  - component: {fileID: 1620343981}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1620343981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620343980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
---- !u!81 &1620343982
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620343980}
-  m_Enabled: 1
---- !u!20 &1620343983
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620343980}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1620343984
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620343980}
-  m_LocalRotation: {x: 0.1305268, y: -0, z: -0, w: 0.9914448}
-  m_LocalPosition: {x: -72.78, y: -5.61, z: 20.35}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1001 &1626203101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40289,6 +40627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: drink_greentea_itoenTest
       objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
 --- !u!4 &1640924428 stripped
@@ -40381,6 +40723,14 @@ PrefabInstance:
     - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
@@ -42273,6 +42623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: craft_yarn_caron_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
 --- !u!4 &1710059841 stripped
@@ -43257,7 +43611,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745448615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.16, y: 0, z: 185.06}
+  m_LocalPosition: {x: -52.16, y: 0, z: 185.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 657118629}
@@ -43572,6 +43926,10 @@ PrefabInstance:
     - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
       propertyPath: m_Name
       value: craft_yarn_caron_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
@@ -43991,6 +44349,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1073290425499673401, guid: 30c35bafa11e9c948ab5b9408d3b7d3b, type: 3}
   m_PrefabInstance: {fileID: 1782466300}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1783057420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 318505717570442006, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+  m_PrefabInstance: {fileID: 1203902132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1783057421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783057420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4467405dbcbd3d64ab4363e9ae8bb813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Labelers:
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  ID: camera
+  description: 
+  captureRgbImages: 1
+  firstCaptureFrame: 0
+  captureTriggerMode: 0
+  manualSensorAffectSimulationTiming: 0
+  simulationDeltaTime: 0.0166
+  framesBetweenCaptures: 0
+  showVisualizations: 1
+  references:
+    version: 1
+    00000000:
+      type: {class: BoundingBox2DLabeler, ns: UnityEngine.Perception.GroundTruth, asm: Unity.Perception.Runtime}
+      data:
+        enabled: 1
+        annotationId: bounding box
+        idLabelConfig: {fileID: 11400000, guid: 6b77fba0166d43b438f35e564ebefe45, type: 2}
+    00000001:
+      type: {class: ObjectCountLabeler, ns: UnityEngine.Perception.GroundTruth, asm: Unity.Perception.Runtime}
+      data:
+        enabled: 1
+        objectCountMetricId: ObjectCount
+        labelConfig: {fileID: 11400000, guid: 6b77fba0166d43b438f35e564ebefe45, type: 2}
+    00000002:
+      type: {class: RenderedObjectInfoLabeler, ns: UnityEngine.Perception.GroundTruth, asm: Unity.Perception.Runtime}
+      data:
+        enabled: 1
+        objectInfoMetricId: RenderedObjectInfo
+        idLabelConfig: {fileID: 11400000, guid: 6b77fba0166d43b438f35e564ebefe45, type: 2}
+    00000003:
+      type: {class: SemanticSegmentationLabeler, ns: UnityEngine.Perception.GroundTruth, asm: Unity.Perception.Runtime}
+      data:
+        enabled: 1
+        annotationId: semantic segmentation
+        labelConfig: {fileID: 11400000, guid: 1b9b443ab6e197b4ba9d290cb446afd1, type: 2}
+        m_TargetTextureOverride: {fileID: 0}
 --- !u!1001 &1784104628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44107,6 +44523,10 @@ PrefabInstance:
     - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
       propertyPath: m_Name
       value: craft_yarn_caron_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
@@ -44281,6 +44701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: drink_greentea_itoenTest
       objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
 --- !u!4 &1799622617 stripped
@@ -44303,6 +44727,14 @@ PrefabInstance:
     - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
@@ -44725,6 +45157,14 @@ PrefabInstance:
     - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
@@ -45565,6 +46005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: drink_greentea_itoenTest
       objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
 --- !u!4 &1838707718 stripped
@@ -45867,6 +46311,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -46077,6 +46529,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -46421,9 +46877,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1876770612}
     - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: _checkpointManager
+      value: 
+      objectReference: {fileID: 894555095}
+    - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _NEWIScheckpointManager
       value: 
-      objectReference: {fileID: 894555099}
+      objectReference: {fileID: 0}
     - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _spawnPointManager
       value: 
@@ -46433,8 +46893,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[1]
       value: CorrectIS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[2]
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
@@ -46488,21 +46964,33 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: ec2da065c0c29614086dda223e6bea9e, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 533529242ce86804d9c2e48356228980, type: 3}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_BehaviorType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
-      value: CorrectIS
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[1]
-      value: Wall
+      value: CorrectIS
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[2]
@@ -46516,7 +47004,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2434991854448928735, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!114 &1876770612 stripped
 MonoBehaviour:
@@ -47758,9 +48247,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1823982337}
     - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: _checkpointManager
+      value: 
+      objectReference: {fileID: 61886582}
+    - target: {fileID: 846286714746702396, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _NEWIScheckpointManager
       value: 
-      objectReference: {fileID: 61886586}
+      objectReference: {fileID: 0}
     - target: {fileID: 1716396506478630505, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: _spawnPointManager
       value: 
@@ -47770,8 +48263,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[1]
       value: CorrectIS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522272461841878790, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.data[2]
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921386370560, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_RootOrder
@@ -47825,21 +48334,33 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3137537921386370566, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: ec2da065c0c29614086dda223e6bea9e, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 533529242ce86804d9c2e48356228980, type: 3}
     - target: {fileID: 3137537921882263139, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_BehaviorType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
+      propertyPath: m_DetectableTags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[0]
-      value: CorrectIS
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[1]
-      value: Wall
+      value: CorrectIS
       objectReference: {fileID: 0}
     - target: {fileID: 3137537921882263141, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
       propertyPath: m_DetectableTags.Array.data[2]
@@ -47853,7 +48374,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2434991854448928735, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
 --- !u!1001 &1915918897
 PrefabInstance:
@@ -47909,6 +48431,10 @@ PrefabInstance:
     - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
       propertyPath: m_Name
       value: craft_yarn_caron_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
@@ -48592,6 +49118,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -48702,6 +49236,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -48835,7 +49373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983678992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 62.8}
+  m_LocalPosition: {x: 0, y: 0, z: 63.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1799622617}
@@ -48971,6 +49509,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -49294,7 +49836,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3137537921078816488, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_PrefabInstance: {fileID: 1316637383}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1999089417
+--- !u!114 &1999089413
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49303,7 +49845,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1999089412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1532889801af824c8a8820049b920b1, type: 3}
+  m_Script: {fileID: 11500000, guid: dc27267969b1a184a9d28a158bc41f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTimeToReachNextCheckpoint: 30
@@ -49394,6 +49936,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -50085,7 +50631,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3137537921078816488, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_PrefabInstance: {fileID: 1203902132}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2033274532
+--- !u!114 &2033274528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -50094,7 +50640,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2033274527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1532889801af824c8a8820049b920b1, type: 3}
+  m_Script: {fileID: 11500000, guid: dc27267969b1a184a9d28a158bc41f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTimeToReachNextCheckpoint: 30
@@ -50580,6 +51126,10 @@ PrefabInstance:
     - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
       propertyPath: m_Name
       value: drink_greentea_itoenTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312647677932183486, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc4611d3380d6c4290948ff80d98afc, type: 3}
@@ -51494,6 +52044,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
       objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
+      objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -51954,7 +52512,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3137537921078816488, guid: c8a49108ea24bd24ea81672de94cbe29, type: 3}
   m_PrefabInstance: {fileID: 203370113}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2132999137
+--- !u!114 &2132999133
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51963,7 +52521,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2132999132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1532889801af824c8a8820049b920b1, type: 3}
+  m_Script: {fileID: 11500000, guid: dc27267969b1a184a9d28a158bc41f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTimeToReachNextCheckpoint: 30
@@ -52024,6 +52582,10 @@ PrefabInstance:
     - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
       propertyPath: m_Name
       value: craft_yarn_caron_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134925323312345538, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a20478c2b36894d959c8e0b4149548, type: 3}
@@ -52131,7 +52693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139771569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.12, y: 0, z: 253.87}
+  m_LocalPosition: {x: -52.12, y: 0, z: 254.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 912620065}
@@ -52275,6 +52837,14 @@ PrefabInstance:
     - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_Name
       value: cereal_cheerios_honeynutTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 320374405636454278, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 3614537875166627221, guid: 400eabd77a85cc9428815894d4df6541, type: 3}
       propertyPath: m_RootOrder

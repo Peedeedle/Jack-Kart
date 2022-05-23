@@ -55,11 +55,11 @@ public class NEWISCheckpointManager : MonoBehaviour {
 
         // if time left is less than 0
         if (TimeLeft < 0f) {
-
+        
             // give negative reward and end episode
             jackKartAgent.AddReward(-1f);
             jackKartAgent.EndEpisode();
-
+        
         }
 
     }
@@ -83,13 +83,13 @@ public class NEWISCheckpointManager : MonoBehaviour {
         if (CurrentCheckpointIndex >= Checkpoints.Count) {
 
             // give the agent a reward and restart the episode
-            jackKartAgent.AddReward(0.5f);
+            jackKartAgent.AddReward(1f);
             jackKartAgent.EndEpisode();
 
         } else {
 
             // reward the agent divided by the checkpoints they hit, set next checkpoint
-            jackKartAgent.AddReward((0.5f) / Checkpoints.Count);
+            jackKartAgent.AddReward((1f) / Checkpoints.Count);
             SetNextCheckpoint();
 
         }
